@@ -59,7 +59,7 @@ if ( $xlsx = SimpleXLSX::parse('daftar_email_1.xlsx') ) {
             $mail->Subject = 'This is test email3';
             $mail->Body    = 'This is the HTML message body <b>in bold!</b>';
             $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
-            $mail->AddAttachment('Sertifikat_Bedah_Buku\\'.$r[2].'.pdf');
+            $mail->AddAttachment('attachments\\'.$r[2].'.pdf');
         
             $mail->send();
             echo 'Message has been sent <br />';
